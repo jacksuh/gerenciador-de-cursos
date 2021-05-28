@@ -22,7 +22,7 @@ public class TestaListaDeAula {
 
         System.out.println(aulas);
 
-        //comparando o tempo da aula ordenando
+        //comparando o tempo da aula, ordenando.
         Collections.sort(aulas, Comparator.comparing(Aula::getTempo));
 
         System.out.println(aulas);
