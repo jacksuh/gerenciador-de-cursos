@@ -1,6 +1,8 @@
 package br.com.jackson;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -32,5 +34,7 @@ public class TestaAlunos {
         }
 
         System.out.println(alunos);
+
+        List<String> alunoEmLista = new ArrayList<>(alunos);
     }
 }
