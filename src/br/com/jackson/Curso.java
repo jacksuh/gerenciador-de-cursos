@@ -15,6 +15,8 @@ public class Curso {
 		this.instrutor = instrutor;
 	}
 
+
+
 	public String getNome() {
 		return nome;
 	}
@@ -41,5 +43,18 @@ public class Curso {
 	public Set<Aluno> getAlunos() {
 		return Collections.unmodifiableSet(alunos);
 	}
+
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
+	}
+
+
+	@Override
+	public int hashCode(){
+		return this.nome.hashCode();
+	}
+
+
+
 
 }
